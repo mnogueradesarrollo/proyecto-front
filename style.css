@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: fff;
+}
+
+header {
+  background-color: #000;
+  padding: 5px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10rem;
+}
+
+.logo img {
+  max-width: 17rem;
+  height: auto;
+}
+
+.nav-principal ul {
+  display: flex;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 3rem;
+}
+
+.nav-principal a {
+  text-decoration: none;
+  color: #d5d5d5;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.nav-principal a:hover {
+  color: #ffc800;
+}
+
+.slider {
+  width: 100%;
+  height: 80vh;
+  background-image: url(./img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.slider h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.slider p {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.btn-slider {
+  background-color: #ffc800; /*color principal*/
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+.btn-slider:hover {
+  background-color: #d9aa00; /*color secundario*/
+}
+
+.servicios-intro {
+  padding: 6rem 2rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.servicio-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.servicio-container .destacado {
+  color: #ffc800;
+}
+
+.linea-divisoria {
+  width: 50px;
+  height: 4px;
+  background-color: #888;
+  margin: 0 auto;
+}
+
+.servicio-container p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 1rem auto 0 auto;
+  color: #000;
+}
+
+.servicios-categorias {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.categoria-servicios {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.categoria-servicios h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.caja-servicio {
+  background: #a98400;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.caja-servicio:hover {
+  transform: translateY(-5px);
+}
+
+.caja-servicio img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.2rem;
+}
+
+.caja-servicio h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.caja-servicio p {
+  font-size: 1rem;
+}
+
+.nosotros-section {
+  background-color: #3aa;
+  padding: 4rem 2rem;
+}
+
+.nosotros-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.nosotros-img {
+  flex: 1 1 50%;
+}
+
+.nosotros-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.nosotros-text {
+  flex: 1 1 50%;
+  padding: 1rem;
+}
+
+.nosotros-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 25px #000;
+}
+
+.nosotros-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Media querys */
+
+@media (max-width: 1000px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-principal ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-servicios {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nosotros-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nosotros-img,
+  .nosotros-text {
+    flex: 1 1 100%;
+  }
+}
