@@ -194,16 +194,19 @@ header {
 
 /* *********** NOSOTROS ************ */
 
-.division-nosotros {
+.separador {
   width: 100%;
-  height: 4px;
-  background-color: #888;
-  margin: 0 auto;
+  height: 5px;
+  background-color: #ffc800;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .nosotros-section {
   background-color: #888;
   padding: 4rem 2rem;
+  margin: 0 auto;
 }
 
 .nosotros-container {
