@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Sontech</title>
   </head>
     <header class="header-container">
@@ -115,10 +116,11 @@
           </div>
         </div>
       </section>
+      
+      <hr class="division-nosotros">
+      <!-- NOSOTROS -->
 
-      <!-- Nosotros -->
-
-      <section class="nosotros" class="nosotros-section">
+      <section id="nosotros" class="nosotros-section">
         <div class="nosotros-container">
 
           <!-- Imagen -->
@@ -128,7 +130,6 @@
           </div>
 
           <!-- Texto -->
-
           <div class="nosotros-text">
             <h2>¿Quiénes somos?</h2>
             <p>Somos una empresa con más de 15 años de experiencia brindando soluciones informáticas y reparación de dispositivos móviles. Nos especializamos en el diagnóstico, mantenimiento y mejora de equipos tecnológicos tanto para usuarios particulares como empresas.</p>
@@ -137,6 +138,67 @@
         </div>
       </section>
 
+      <!-- VIDEO -->
+
+      <section class="video-section">
+        <h2>Conocé nuestro trabajo</h2>
+        <p>Te mostramos como llevamos adelante nuestras reparaciones y atención al cliente.</p>
+        <div class="video-caja">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/XQnTWTU4yuI?si=PuHVZUDQq9fIHqth" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+      
+      <!-- CONTACTO -->
+
+      <section id="contacto" class="contacto-section">
+        <div class="contacto-container">
+
+
+          <div class="contacto-formulario">
+            <h2>CONTACTATE CON NOSOTROS</h2>
+            <form action="https://formspree.io/f/xjkwazep" method="POST">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required>
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido" id="apellido" required>
+              <label for="email">Correo electrónico</label>
+              <input type="email" name="email" id="email" required>
+              <label for="telefono">Número telefónico</label>
+              <input type="tel" name="telefono" id="telefono">
+              <label for="mensaje">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+              <button type="submit">Enviar mensaje</button>
+            </form>      
+          </div>
+
+          <!-- MAPA -->
+
+          <div class="contacto-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.5374650045366!2d-58.79098849509109!3d-34.65091809842441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9456e9520e7b%3A0x8288b7bd2d5b91f2!2sMunicipalidad%20de%20Moreno!5e0!3m2!1ses!2sar!4v1748004580701!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer-redes">
+        <a href="#" aria-label="Whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+      <div class="footer-texto">
+        <p>&copy; 2025 Sontech. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="#">Política de privacidad</a>
+          <span>|</span>
+          <a href="#">Términos y condiciones</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
