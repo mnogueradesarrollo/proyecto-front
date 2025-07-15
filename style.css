@@ -278,6 +278,20 @@ header {
   border-radius: 10px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8);
 }
+
+/* ************** PRODUCTOS ***************** */
+.producto-section {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.producto-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
 /* ************** CONTACTO ***************** */
 
 .contacto-section {
