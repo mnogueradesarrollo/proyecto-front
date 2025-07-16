@@ -154,62 +154,125 @@
 
       <section id="productos" class="producto-section">
         <h2>Productos</h2>
-
-        <div class="categoria-servicios">
-          <h3>🛒 Nuestros productos destacados</h3>
-          <div class="grid-servicios">
+        <h3>🛒 Nuestros productos destacados</h3>
+        
+          
+          <div class="grid-productos">
 
             <!-- Caja 1 -->
             
-            <div class="caja-servicio">
-              <img src="./img/1.png" alt="compu-reparacion">
-              <h4>Reparación de computadoras</h4>
-              <p>Soluciones rápidas para fallas de hardware y software.</p>
+            <div class="caja-producto">
+              <img src="./img/kit-actualizacion-amd-1.jpg" alt="compu-reparacion">
+              <h4>Pc Gamer Amd Ryzen 7 5700g + 32gb + 1tb</h4>
+              <p class="precio">$724000</p>
+              <button
+                class="agregar-carrito"
+                data-id="1"
+                data-nombre="Pc Gamer Amd Ryzen 7"
+                data-precio="724000"
+              >
+                Agregar al carrito
+              </button>
+
             </div>
 
             <!-- Caja 2 -->
 
-            <div class="caja-servicio">
-              <img src="./img/2.png" alt="formateo-limpieza">
-              <h4>PC lenta, solución rápida</h4>
-              <p>Formateo, limpieza de virus y optimización general.</p>
+            <div class="caja-producto">
+              <img src="./img/mouse-logitech-2.jpg" alt="compu-reparacion">
+              <h4>Mouse Logitech G203 Lightsync</h4>
+              <p class="precio">$34000</p>
+              <button
+                class="agregar-carrito"
+                data-id="2"
+                data-nombre="Mouse Logitech G203"
+                data-precio="34000"
+              >
+                Agregar al carrito
+              </button>
             </div>
 
             <!-- Caja 3 -->
 
-            <div class="caja-servicio">
-              <img src="./img/3.png" alt="recuperacion-datos">
-              <h4>¿Perdiste archivos?</h4>
-              <p>Recuperamos datos borrados de discos y pendrives.</p>
+            <div class="caja-producto">
+              <img src="./img/teclado-mecanico-redragon-3.jpg" alt="compu-reparacion">
+              <h4>Teclado gamer Redragon Kumara QWERTY</h4>
+              <p class="precio">$61000</p>
+              <button
+                class="agregar-carrito"
+                data-id="3"
+                data-nombre="Teclado Redrago Kumara"
+                data-precio="61000"
+              >
+                Agregar al carrito
+              </button>
             </div>
             
             <!-- Caja 4 -->
 
-            <div class="caja-servicio">
-              <img src="./img/4.png" alt="reparacion-celular">
-              <h4>Reparamos tu celular</h4>
-              <p>Pantallas, baterías, conectores y más.</p>
+            <div class="caja-producto">
+              <img src="./img/iphone-14promax-4.jpg" alt="compu-reparacion">
+              <h4>Apple iPhone 14 Pro (128 GB)</h4>
+              <p class="precio">$1100000</p>
+              <button
+                class="agregar-carrito"
+                data-id="4"
+                data-nombre="Iphone 14 Pro"
+                data-precio="1100000"
+              >
+                Agregar al carrito
+              </button>
             </div>
 
             <!-- Caja 5 -->
 
-            <div class="caja-servicio">
-              <img src="./img/5.png" alt="liberacion-software">
-              <h4>Liberación y actualización</h4>
-              <p>Desbloqueo, flasheo y restauración de sistema.</p>
+            <div class="caja-producto">
+              <img src="./img/samsung-a15-5.jpg" alt="compu-reparacion">
+              <h4>Samsung A15 128 Gb</h4>
+              <p class="precio">$338000</p>
+              <button
+                class="agregar-carrito"
+                data-id="5"
+                data-nombre="Samsung A15"
+                data-precio="338000"
+              >
+                Agregar al carrito
+              </button>
             </div>
 
             <!-- Caja 6 -->
 
-            <div class="caja-servicio">
-              <img src="./img/6.png" alt="insumos-repuestos">
-              <h4>Accesorios y repuestos</h4>
-              <p>Fundas, cargadores baterías, pantallas y más.</p>
+            <div class="caja-producto">
+              <img src="./img/moto-g15-6.jpg" alt="compu-reparacion">
+              <h4>Motorola Moto G15 256gb</h4>
+              <p class="precio">$250000</p>
+              <button
+                class="agregar-carrito"
+                data-id="6"
+                data-nombre="Motorola G15"
+                data-precio="250000"
+              >
+                Agregar al carrito
+              </button>
             </div>
           </div>
+        
+      </section>
+      
+      <!-- CARRITO DE COMPRAS -->
+
+      <section id="carrito" class="carrito-section">
+        
+        <div class="carrito-contenedor">
+          <h2>🛒 Carrito de Compras</h2>
+          <ul id="lista-carrito" class="carrito-items"></ul>
+          <p id="total" class="carrito-total"> Total: $0</p>
+          <button id="vaciar-carrito" class="btn-vaciar">Vaciar carrito</button>
+          <button class="btn-finalizar">Finalizar compra</button>
         </div>
       </section>
       
+
       <!-- CONTACTO -->
 
       <section id="contacto" class="contacto-section">
@@ -263,5 +326,6 @@
         </div>
       </div>
     </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>
