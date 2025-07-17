@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   cargarCarrito();
 
   // Escuchar todos los botones "Agregar al Carrito"
-  const botonesAgregar = document.querySelectorAll(".agregar-carrito");
+  var botonesAgregar = document.getElementsByClassName("agregar-carrito");
 
   for (var i = 0; i < botonesAgregar.length; i++) {
     botonesAgregar[i].addEventListener("click", agregarProducto);
@@ -114,3 +114,27 @@ function eliminarProducto(event) {
   localStorage.setItem("carrito", JSON.stringify(carrito));
   cargarCarrito();
 }
+
+//Finalizar compra
+
+document
+  .getElementById("finalizar-compra")
+  .addEventListener("click", function () {
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    if (carrito.length === 0) {
+      alert(
+        "El carrito esta vacío. Agrega productos antes de finalizar la compra."
+      );
+      return;
+    }
+
+    let total = carrito.reduce((acc, p) => acc + p.precio * p.cantidad, 0);
+
+    alert(`¡Gracias por tu compra! El total es $${total.toLocaleString()}.`);
+
+    //Vaciar carrito después de la compra
+
+    localStorage.removeItem("carrito");
+    cargarCarrito();
+  });
